@@ -1,6 +1,3 @@
-import React from "react";
-import { Zoom } from "react-reveal";
-
 // Images
 import TheBigIdea from "../../../assets/images/the_big_idea.png";
 
@@ -16,7 +13,7 @@ const Section2 = () => {
         <h1 className="font-clashDisplay font-bold text-center sm:text-[32px] text-[22px] text-white">
           Introduction to getlinked{" "}
         </h1>
-        <Zoom right>
+        <div>
           <h1 className="font-clashDisplay text-center lg:text-left font-bold sm:text-[32px] text-[22px] text-purple">
             tech Hackathon 1.0
           </h1>
@@ -28,7 +25,7 @@ const Section2 = () => {
             problems, pushing the boundaries of technology, and creating
             solutions that can change the world, that's what we're all about!
           </p>
-        </Zoom>
+        </div>
       </div>
     </section>
   );

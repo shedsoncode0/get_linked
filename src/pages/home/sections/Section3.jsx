@@ -1,7 +1,3 @@
-import React from "react";
-
-import { Slide } from "react-reveal";
-
 //Images
 import GirlOnChair from "../../../assets/images/girlOnChair.png";
 
@@ -13,7 +9,7 @@ const Section3 = () => {
           <h1 className="font-clashDisplay text-center lg:text-left font-bold sm:text-[32px] text-[22px] text-white">
             Rules and
           </h1>
-          <Slide bottom>
+          <div>
             <h1 className="font-clashDisplay text-center lg:text-left font-bold sm:text-[32px] text-[22px] text-purple">
               Guidelines
             </h1>
@@ -26,7 +22,7 @@ const Section3 = () => {
               creating solutions that can change the world, that's what we're
               all about!
             </p>
-          </Slide>
+          </div>
         </div>
       </div>
       <div className="flex-1 flex justify-center">
