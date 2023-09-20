@@ -36,7 +36,7 @@ const Navbar = () => {
           <div className="w-[26px] h-[4px] bg-white rounded-full" />
         </div>
         <div className="space-x-10 lg:block hidden">
-          {links.map((item, index) => (
+          {links.map((item, index) => ( 
             <Link className="text-white " key={index}>
               {item.name}
             </Link>

@@ -46,7 +46,7 @@ const Experience = () => {
     <>
       <OrbitControls />
       <ambientLight intensity={10} />
-      {/* <PresentationControls> */}
+      <PresentationControls>
       {/* <Float> */}
       <Center>
         <group>
@@ -150,7 +150,7 @@ const Experience = () => {
         </group>
       </Center>
       {/* </Float> */}
-      {/* </PresentationControls> */}
+      </PresentationControls>
     </>
   );
 };

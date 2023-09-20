@@ -7,7 +7,7 @@ import GirlOnChair from "../../../assets/images/girlOnChair.png";
 
 const Section3 = () => {
   return (
-    <section className=" lg:flex py-14 lg:pl-28 lg:px-0 px-10  items-center block border-b border-white/20">
+    <section className=" lg:flex  px-10 py- items-center block border-b border-white/20">
       <div className="flex-1 flex justify-center items-center">
         <div className="">
           <h1 className="font-clashDisplay text-center lg:text-left font-bold sm:text-[32px] text-[22px] text-white">
@@ -31,7 +31,7 @@ const Section3 = () => {
       </div>
       <div className="flex-1 flex justify-center">
         <div>
-          <img src={GirlOnChair} alt="" />
+          <img className="w-[664px]" src={GirlOnChair} alt="" />
         </div>
       </div>
     </section>
