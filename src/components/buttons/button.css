@@ -1,0 +1,5 @@
+.primary_button:hover {
+  color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #fe34b9, 0 0 20px #903aff, 0 0 100px #d434fe;
+}
