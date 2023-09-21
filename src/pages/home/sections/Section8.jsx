@@ -13,12 +13,17 @@ const Section8 = () => {
         </p>
       </div>
       <div className="border-[1px] border-purple rounded-[5px] w-full flex justify-center items-center max-w-[90%] h-[560px] mt-14">
-        <div className="bg-amber-200">
-          <div className="flex">
-            <div className="p-10 bg-slate-300"></div>
-            <div className="p-10 bg-slate-300"></div>
-            <div className="p-10 bg-slate-300"></div>
+        <div className="grid grid-cols-3 relative ">
+          <div className="absolute flex justify-evenly  w-full top-[50%] translate-y-[-50%] p-2">
+            <div className="p-5 rounded-full bg-darkBlue" />
+            <div className="p-5 rounded-full bg-darkBlue" />
           </div>
+          <div className="w-[200px] border-b-4 border-purple h-[150px]"></div>
+          <div className="w-[200px] border-x-4 border-b-4 border-purple h-[150px]"></div>
+          <div className="w-[200px] border-b-4 border-purple h-[150px]"></div>
+          <div className="w-[200px] h-[150px]"></div>
+          <div className="w-[200px] border-x-4 border-purple h-[150px]"></div>
+          <div className="w-[200px] h-[150px]"></div>
         </div>
       </div>
     </section>
