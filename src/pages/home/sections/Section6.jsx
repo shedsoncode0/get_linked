@@ -1,26 +1,31 @@
 import React from "react";
-
+import { Slide, Zoom } from "react-awesome-reveal";
 
 const LeftToRight = ({ title, date, content1, content2, number }) => {
   return (
     <div className="flex justify-between max-w-screen-xl w-full space-x-24">
       <div className="flex-1 flex flex-col justify-center">
-        <h1 className=" w-full text-right text-purple font-bold text-2xl">
-          {title}
-        </h1>
-        <div className="font-normal text-right text-sm">
-          <h1>{content1}</h1>
-          <h1>{content2}</h1>
-        </div>
+        <Zoom duration={700} direction="left" triggerOnce={true}>
+          <h1 className=" w-full text-right text-purple font-bold text-2xl">
+            {title}
+          </h1>
+          <div className="font-normal text-right text-sm">
+            <h1>{content1}</h1>
+            <h1>{content2}</h1>
+          </div>
+        </Zoom>
       </div>
       <div className="relative flex bg-purple justify-center items-center">
         <div className="h-[150px] w-1 bg-purple" />
-        <div className="w-14 h-14 font-bold font-montserrat text-[24px] border-8 border-darkBlue rounded-full bg-purple absolute grid place-content-center">
+        <div className="w-14 h-14 font-bold bg-gradient-to-r from-pink via-purple to-blue via-0% font-montserrat text-[24px] border-8 border-darkBlue rounded-full bg-purple absolute grid place-content-center">
           {number}
         </div>
       </div>
+
       <div className="flex-1 flex items-center">
-        <h1 className=" text-purple font-bold text-2xl">{date}</h1>
+        <Zoom duration={700} delay={500} direction="right" triggerOnce={true}>
+          <h1 className=" text-purple font-bold text-2xl">{date}</h1>
+        </Zoom>
       </div>
     </div>
   );
@@ -29,29 +34,33 @@ const RightToLeft = ({ title, date, content1, content2, number, title2 }) => {
   return (
     <div className="flex justify-between  max-w-screen-xl w-full space-x-24">
       <div className="flex-1 flex items-center justify-end text-r">
-        <h1 className="text-purple font-bold text-2xl">{date}</h1>
+        <Zoom duration={700} delay={500} direction="left" triggerOnce={true}>
+          <h1 className=" text-purple font-bold text-2xl">{date}</h1>
+        </Zoom>
       </div>
 
       <div className="relative flex bg-purple justify-center items-center">
         <div className="h-[150px] w-1 bg-purple" />
-        <div className="w-14 font-bold h-14 font-montserrat text-[24px] border-8 border-darkBlue rounded-full bg-purple absolute grid place-content-center">
+        <div className="w-14 font-bold h-14 bg-gradient-to-r from-pink via-purple to-blue via-0% font-montserrat text-[24px] border-8 border-darkBlue rounded-full bg-purple absolute grid place-content-center">
           {number}
         </div>
       </div>
 
       <div className="flex-1 flex flex-col justify-center">
-        <div>
-          <h1 className=" w-full text-left text-purple font-bold text-2xl">
-            {title}
-          </h1>
-          {/* <h1 className=" w-full text-left text-purple font-bold text-2xl">
+        <Zoom duration={700} direction="left" triggerOnce={true}>
+          <div>
+            <h1 className=" w-full text-left text-purple font-bold text-2xl">
+              {title}
+            </h1>
+            {/* <h1 className=" w-full text-left text-purple font-bold text-2xl">
             {title2}
           </h1> */}
-        </div>
-        <div className="font-normal text-left text-sm">
-          <h1>{content1}</h1>
-          <h1>{content2}</h1>
-        </div>
+          </div>
+          <div className="font-normal text-left text-sm">
+            <h1>{content1}</h1>
+            <h1>{content2}</h1>
+          </div>
+        </Zoom>
       </div>
     </div>
   );
@@ -111,14 +120,14 @@ const Section6 = () => {
           {/* 6 */}
           <div className="flex justify-between  max-w-screen-xl w-full space-x-24">
             <div className="flex-1 flex items-center justify-end text-r">
-              <h1 className="text-purple font-bold text-2xl">
+              <h1 className="text-purple  font-bold text-2xl">
                 November 18, 2023
               </h1>
             </div>
 
             <div className="relative flex  justify-center items-center">
               <div className="h-[70px] w-1 bg-purple relative -top-4" />
-              <div className="w-14 h-14 font-montserrat text-[24px] border-8 border-darkBlue rounded-full bg-purple absolute grid place-content-center">
+              <div className="w-14 h-14 font-bold bg-gradient-to-r from-pink via-purple to-blue via-0% font-montserrat text-[24px] border-8 border-darkBlue rounded-full bg-purple absolute grid place-content-center">
                 6
               </div>
             </div>

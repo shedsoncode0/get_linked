@@ -110,3 +110,29 @@
     transform: translateY(-20px);
   }
 }
+
+.hovering-img2 {
+  animation: hoverAnimation2 2.5s infinite alternate;
+}
+
+@keyframes hoverAnimation2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+
+.hovering-img3 {
+  animation: hoverAnimation3 2.3s infinite alternate;
+}
+
+@keyframes hoverAnimation3 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}

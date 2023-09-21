@@ -13,7 +13,7 @@ const Section3 = () => {
             <h1 className="font-clashDisplay text-center lg:text-left font-bold sm:text-[32px] text-[22px] text-purple">
               Guidelines
             </h1>
-            <p className="max-w-[535px] w-full text-center lg:text-left font-montserrat text-[14px] font-medium text-white">
+            <p  className="max-w-[535px] w-full text-center lg:text-left font-montserrat text-[14px] font-medium text-white">
               Our tech hackathon is a melting pot of visionaries, and its
               purpose is as clear as day: to shape the future. Whether you're a
               coding genius, a design maverick, or a concept wizard, you'll have

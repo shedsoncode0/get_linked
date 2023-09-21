@@ -1,4 +1,5 @@
 import React from "react";
+import { Zoom  } from "react-awesome-reveal";
 
 // Images
 import Image from "../../../assets/images/two_people.png";
@@ -44,6 +45,8 @@ const Section4 = () => {
           Key attributes
         </h1>
         <div className="max-w-[535px]  w-full text-center lg:text-left font-montserrat text-[14px] font-medium text-white space-y-3">
+          <Zoom  direction="right" duration={600} cascade>
+
           {keyAttributes.map((item, index) => (
             <div key={index}>
               <h1 className="text-pink text-[14px] font-semibold">
@@ -54,6 +57,7 @@ const Section4 = () => {
               </h1>
             </div>
           ))}
+          </Zoom >
           <div className="pt-20">
             <div className="w-[172px]">
               <PrimaryButton text="Read more" />

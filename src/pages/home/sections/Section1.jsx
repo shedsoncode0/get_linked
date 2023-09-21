@@ -7,6 +7,7 @@ import MainBoy from "../../../assets/images/main_boy.png";
 import World from "../../../assets/images/world.png";
 import { PrimaryButton } from "../../../components/buttons";
 import { CountDown } from "../../../components";
+import { AttentionSeeker } from "react-awesome-reveal";
 
 const Section1 = () => {
   return (
@@ -54,7 +55,10 @@ const Section1 = () => {
         </div>
         {/* Layout 2 */}
         <div className="relative flex-1 flex justify-end">
+          
+
           <img src={MainBoy} alt="" srcset="" />
+          
           <m.div
             initial={{ rotateZ: 2, scale: 1 }}
             animate={{ rotateZ: 0, scale: 0.98 }}
@@ -66,7 +70,9 @@ const Section1 = () => {
             }}
             className="absolute world_image top-0 left-10"
           >
+            <AttentionSeeker effect="pulse">
             <img src={World} alt="" srcset="" />
+            </AttentionSeeker>
           </m.div>
         </div>
       </div>
