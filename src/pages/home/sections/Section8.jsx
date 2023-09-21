@@ -1,5 +1,13 @@
 import React from "react";
 
+// Images
+import Paybox from "../../../assets/images/partners/Paybox.png";
+import Liberty1 from "../../../assets/images/partners/Liberty1.png";
+import Liberty2 from "../../../assets/images/partners/Liberty2.png";
+import Winwise from "../../../assets/images/partners/winwise.png";
+import Wisper from "../../../assets/images/partners/wisper.png";
+import Vuzual from "../../../assets/images/partners/vuzual_plus.png";
+
 const Section8 = () => {
   return (
     <section className="w-full flex flex-col items-center  py-20">
@@ -18,12 +26,24 @@ const Section8 = () => {
             <div className="p-5 rounded-full bg-darkBlue" />
             <div className="p-5 rounded-full bg-darkBlue" />
           </div>
-          <div className="w-[200px] border-b-4 border-purple h-[150px]"></div>
-          <div className="w-[200px] border-x-4 border-b-4 border-purple h-[150px]"></div>
-          <div className="w-[200px] border-b-4 border-purple h-[150px]"></div>
-          <div className="w-[200px] h-[150px]"></div>
-          <div className="w-[200px] border-x-4 border-purple h-[150px]"></div>
-          <div className="w-[200px] h-[150px]"></div>
+          <div className="w-[300px] grid place-content-center border-b-4 border-purple h-[150px]">
+            <img className="w-[120px]" src={Liberty1} alt="" />
+          </div>
+          <div className="w-[300px] grid place-content-center border-x-4 border-b-4 border-purple h-[150px]">
+            <img className="w-[160px]" src={Liberty2} alt="" />
+          </div>
+          <div className="w-[300px] grid place-content-center border-b-4 border-purple h-[150px]">
+            <img className="w-[131px]" src={Winwise} alt="" />
+          </div>
+          <div className="w-[300px] grid place-content-center h-[150px]">
+            <img className="w-[147px]" src={Wisper} alt="" />
+          </div>
+          <div className="w-[300px] grid place-content-center border-x-4 border-purple h-[150px]">
+            <img className="w-[204px]" src={Paybox} alt="" />
+          </div>
+          <div className="w-[300px] grid place-content-center h-[150px]">
+          <img className="w-[231px]" src={Vuzual} alt="" />
+          </div>
         </div>
       </div>
     </section>

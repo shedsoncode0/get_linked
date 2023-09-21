@@ -12,26 +12,30 @@ import Section6 from "./sections/Section6";
 import { useEffect } from "react";
 import Section7 from "./sections/Section7";
 import Section8 from "./sections/Section8";
+import Section9 from "./sections/Section9";
 
 const Home = () => {
   return (
     <div className="pt-2">
-      {/* <Section1 /> */}
+      <Section1 />
       {/* Section 2 */}
-      {/* <Section2 /> */}
+      <Section2 />
       {/* Section 3 */}
-      {/* <Section3 /> */}
+      <Section3 />
       {/* Section 4 */}
-      {/* <Section4 /> */}
+      <Section4 />
       {/* Section 5 */}
-      {/* <Section5 /> */}
+      <Section5 />
       {/* Section 6 */}
-      {/* <Section6 /> */}
+      <Section6 />
       {/* Section 7 */}
       <Section7 />
       <div className="w-full h-64"></div>
       {/* Section 8 */}
       <Section8 />
+      <div className="w-full h-64"></div>
+      {/* Section 9 */}
+      <Section9 />
     </div>
   );
 };
