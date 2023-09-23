@@ -7,17 +7,33 @@ import MainBoy from "../../../assets/images/main_boy.png";
 import World from "../../../assets/images/world.png";
 import { PrimaryButton } from "../../../components/buttons";
 import { CountDown } from "../../../components";
+import { AttentionSeeker } from "react-awesome-reveal";
+
+// Image
+import Blob from "../../../assets/images/blob3.png";
+import Blob2 from "../../../assets/images/blob2.png";
 
 const Section1 = () => {
   return (
-    <section className="flex-1  border-b border-white/20 pl-28">
+    <section className="flex-1 z-50 relative border-b border-white/20 pl-28">
+      {/* blob */}
+      <img className="absolute  top-0" src={Blob} alt="" />
+
+      {/*  */}
       <div className="flex flex-col items-end pr-14">
         <h1 className="font-montserrat text-[36px] italic font-bold text-white relative">
           Igniting a Revolution in HR Innovation
         </h1>
-        <div className="w-[280px] sketch_clip_path">
+        <div className="w-[280px] z-40 sketch_clip_path">
           <img src={Vector} alt="vector" />
         </div>
+        {/*  */}
+        <img
+          className="absolute w-[951px] -top-20 z-20 right-0"
+          src={Blob2}
+          alt=""
+        />
+        {/*  */}
       </div>
       <div className="w-full flex lg:flex-row flex-col justify-between items-center mt-10">
         <div className="flex-1">
@@ -55,6 +71,7 @@ const Section1 = () => {
         {/* Layout 2 */}
         <div className="relative flex-1 flex justify-end">
           <img src={MainBoy} alt="" srcset="" />
+
           <m.div
             initial={{ rotateZ: 2, scale: 1 }}
             animate={{ rotateZ: 0, scale: 0.98 }}
@@ -66,7 +83,9 @@ const Section1 = () => {
             }}
             className="absolute world_image top-0 left-10"
           >
-            <img src={World} alt="" srcset="" />
+            <AttentionSeeker effect="pulse">
+              <img src={World} alt="" srcset="" />
+            </AttentionSeeker>
           </m.div>
         </div>
       </div>

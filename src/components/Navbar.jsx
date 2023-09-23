@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { PrimaryButton } from "./buttons";
+import { AttentionSeeker } from "react-awesome-reveal";
 
 const links = [
   {
@@ -23,11 +24,13 @@ const links = [
 
 const Navbar = () => {
   return (
-    <nav className="w-full py-7 pt-10 px-28 border-b border-white/20 flex items-center">
-      <h1 className="text-white font-clashDisplay font-bold text-[36px]">
-        get
-        <span className="text-purple">linked</span>
-      </h1>
+    <nav className="w-full z-10 py-7 pt-10 px-28 border-b border-white/20 flex items-center">
+      <AttentionSeeker effect="pulse">
+        <h1 className="text-white font-clashDisplay font-bold text-[36px]">
+          get
+          <span className="text-purple">linked</span>
+        </h1>
+      </AttentionSeeker>
 
       <div className="flex-1 flex items-center justify-end  space-x-20">
         <div className="gap-1 flex lg:hidden flex-col">
@@ -42,9 +45,12 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <div className="w-[172px] primary_button transition-all lg:block hidden">
+        <Link
+          to="/register"
+          className="w-[172px] primary_button transition-all lg:block hidden"
+        >
           <PrimaryButton />
-        </div>
+        </Link>
       </div>
     </nav>
   );
