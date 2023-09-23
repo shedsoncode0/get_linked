@@ -31,7 +31,7 @@ const keyAttributes = [
 const Section4 = () => {
   return (
     <section className="flex-1 py-36  px-10 lg:flex block border-b border-white/20">
-      <div className="flex-1 flex justify-center items-end">
+      <div className="flex-1 z-50 flex justify-center items-end">
         {/* <div className=""> */}
         <img className="w-[710px]" src={Image} alt="" srcset="" />
         {/* </div> */}

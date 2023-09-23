@@ -35,7 +35,18 @@ const CountDown = () => {
 
   return (
     <div className=" text-white w-[500px] font-unicaOne justify-start flex space-x-10">
-      <CanvasSpace />
+      <div className="flex items-baseline">
+        <h1>{hours}</h1>
+        <span className="text-sm">h</span>
+      </div>
+      <div className="flex items-baseline">
+        <h1>{minutes}</h1>
+        <span className="text-sm">m</span>
+      </div>
+      <div className="flex items-baseline">
+        <h1>{seconds}</h1>
+        <span className="text-sm">s</span>
+      </div>{" "}
     </div>
   );
 };

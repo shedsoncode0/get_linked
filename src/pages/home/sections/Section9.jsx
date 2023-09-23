@@ -8,8 +8,8 @@ import { PrimaryButton } from "../../../components/buttons";
 
 const Section9 = () => {
   return (
-    <section className="flex items-center justify-center lg:flex-row flex-col">
-      <div className="flex-1 flex flex-col justify-center items-center">
+    <section className="flex py-20  px-10 justify-center lg:flex-row flex-col">
+      <div className="flex-1 flex flex-col  items-center">
         <div className="max-w-[569px] w-full">
           <h1 className="text-white font-clashDisplay text-[32px] font-bold">
             Privacy Policy and
@@ -71,7 +71,7 @@ const Section9 = () => {
         {/*  */}
       </div>
       {/*  */}
-      <div className="flex-1 flex justify-center items-center">
+      <div className="flex-1 flex justify-center items-center h-[1000px] lg:mt-0 mt-[270px]">
         <div className="relative flex items-center ">
           <div className="max-w-[530px] w-full z-0 absolute -top-48 left-5">
             <img src={Lock} alt="lock" />

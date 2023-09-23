@@ -7,7 +7,7 @@ import TheBigIdea from "../../../assets/images/the_big_idea.png";
 const Section2 = () => {
   return (
     <section className="flex-1 py-36 px-10 lg:flex block border-b border-white/20">
-      <div className="flex-1 flex justify-center">
+      <div className="flex-1 z-30 flex justify-center">
         <div className="dd w-[490px] h-[477px]">
           <img src={TheBigIdea} alt="" srcset="" />
         </div>

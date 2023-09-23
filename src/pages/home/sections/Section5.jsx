@@ -70,10 +70,10 @@ const Section5 = () => {
         </div>
       </div>
       <div className="flex-1 flex justify-center">
-        <div className="relative">
+        <div className="relative z-50 ">
           <img className="max-w-[741px] w-full" src={Man} alt="man" />
 
-          <div className="hovering-img absolute top-0 ">
+          <div className="hovering-img z-50 absolute top-0 ">
             <Zoom direction="up" duration={500}>
               <AttentionSeeker effect="shake">
                 <img className="" src={Question3D} alt="question3d" />
