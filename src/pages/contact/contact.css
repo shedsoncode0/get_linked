@@ -1,0 +1,9 @@
+.blurry {
+  filter: blur(84px);
+}
+
+@media screen and(min-width: 768px) {
+  .bottom-shadow {
+    box-shadow: 0 4px 4px #0007;
+  }
+}

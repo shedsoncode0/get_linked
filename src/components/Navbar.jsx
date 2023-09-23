@@ -17,7 +17,7 @@ const links = [
   },
   {
     name: "Contacts",
-    href: "/home",
+    href: "/contact",
   },
 ];
 
@@ -37,7 +37,7 @@ const Navbar = () => {
         </div>
         <div className="space-x-10 lg:block hidden">
           {links.map((item, index) => (
-            <Link className="text-white " key={index}>
+            <Link to={item.href} className="text-white " key={index}>
               {item.name}
             </Link>
           ))}
