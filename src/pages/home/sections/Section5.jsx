@@ -1,6 +1,6 @@
 // Images
 import Man from "../../../assets/images/man_thinking.png";
-import Question3D from "../../../assets/images/Question3d.png";
+import Question3D from "../../../assets/images/question3d.png";
 import { useState } from "react";
 import Accordion from "../../../components/Accordion";
 import { AttentionSeeker, Zoom } from "react-awesome-reveal";
