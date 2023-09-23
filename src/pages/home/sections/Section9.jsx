@@ -8,7 +8,10 @@ import { PrimaryButton } from "../../../components/buttons";
 
 const Section9 = () => {
   return (
-    <section className="flex py-20  px-10 justify-center lg:flex-row flex-col">
+    <section className="flex py-20 relative px-10 justify-center lg:flex-row flex-col">
+      {/* blob */}
+      <div className="blurry absolute z-50 -bottom-[20px] -left-[50px] max-w-[20rem] h-[20rem] rounded-full bg-[#903AFF77]"></div>
+      {/*  */}
       <div className="flex-1 flex flex-col  items-center">
         <div className="max-w-[569px] w-full">
           <h1 className="text-white font-clashDisplay text-[32px] font-bold">

@@ -27,7 +27,11 @@ const defaultOptions = {
 
 const Section7 = () => {
   return (
-    <section className="flex py-20 items-center lg:flex-row flex-col">
+    <section className="flex py-20 px-10 items-center relative lg:flex-row flex-col">
+      {/* blob */}
+      <div className="blurry absolute top-[250px] left-44 w-[20rem] h-[20rem] rounded-full bg-[#903AFF77]"></div>
+      <div className="blurry absolute top-[600px] -right-[200px] w-[20rem] h-[20rem] rounded-full bg-[#903AFF77]"></div>
+      {/*  */}
       <div className="flex-1 flex justify-center items-center relative top-40">
         <div className="w-[548px] h-[483]  relative">
           <img src={Cup} alt="cup" className="hovering-img" srcset="" />
@@ -128,7 +132,8 @@ const Section7 = () => {
                   N400,000
                 </h1>
               </div>
-            </div>n  
+            </div>
+            n
           </Tilt>
           {/*  */}
           {/* Card 3 */}

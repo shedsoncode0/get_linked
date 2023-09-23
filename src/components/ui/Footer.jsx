@@ -19,8 +19,6 @@ const Footer = () => {
   useEffect(() => {
     let footerWidth = document.getElementById(id).clientWidth;
     setUseWidth(footerWidth);
-
-    return console.log(useWidth);
   }, [id, useWidth]);
 
   const contactInfo = [

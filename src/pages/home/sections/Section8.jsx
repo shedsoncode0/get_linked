@@ -10,7 +10,11 @@ import Vuzual from "../../../assets/images/partners/vuzual_plus.png";
 
 const Section8 = () => {
   return (
-    <section className="w-full flex flex-col items-center  py-20">
+    <section className="w-full relative flex flex-col items-center  py-20">
+      {/* blob */}
+      <div className="blurry absolute top-[250px] -left-5 w-[20rem] h-[20rem] rounded-full bg-[#903AFF77]"></div>
+      <div className="blurry absolute top-[600px] -right-5 w-[20rem] h-[20rem] rounded-full bg-[#903AFF77]"></div>
+      {/*  */}
       <div className="w-full flex items-center space-y-4 flex-col">
         <h1 className="text-white font-clashDisplay text-[32px] font-bold">
           Partners and Sponsors
@@ -42,7 +46,7 @@ const Section8 = () => {
             <img className="w-[204px]" src={Paybox} alt="" />
           </div>
           <div className="w-[300px] grid place-content-center h-[150px]">
-          <img className="w-[231px]" src={Vuzual} alt="" />
+            <img className="w-[231px]" src={Vuzual} alt="" />
           </div>
         </div>
       </div>

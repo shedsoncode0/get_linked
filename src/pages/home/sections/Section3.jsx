@@ -5,8 +5,9 @@ import Blob from "../../../assets/images/blob4.png";
 const Section3 = () => {
   return (
     <section className=" lg:flex relative px-10 py- items-center block border-b border-white/20">
-      {/* Blob */}
-    
+       {/* blob */}
+       <div className="blurry absolute left-48 w-[20rem] h-[20rem] rounded-full bg-[#903AFF77]"></div>
+       <div className="blurry absolute top-[300px] -right-48 w-[20rem] h-[20rem] rounded-full bg-[#903AFF77]"></div>
       {/*  */}
       <div className="flex-1 flex justify-center items-center">
         <div className="z-50">

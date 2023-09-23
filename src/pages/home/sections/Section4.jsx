@@ -1,5 +1,5 @@
 import React from "react";
-import { Zoom  } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 // Images
 import Image from "../../../assets/images/two_people.png";
@@ -30,7 +30,11 @@ const keyAttributes = [
 
 const Section4 = () => {
   return (
-    <section className="flex-1 py-36  px-10 lg:flex block border-b border-white/20">
+    <section className="flex-1 relative py-36  px-10 lg:flex block border-b border-white/20">
+      {/* blob */}
+      <div className="blurry absolute top-[500px] left-10 w-[20rem] h-[20rem] rounded-full bg-[#903AFF77]"></div>
+      <div className="blurry absolute top-[700px] -right-10 w-[20rem] h-[20rem] rounded-full bg-[#903AFF77]"></div>
+      {/*  */}
       <div className="flex-1 z-50 flex justify-center items-end">
         {/* <div className=""> */}
         <img className="w-[710px]" src={Image} alt="" srcset="" />
@@ -45,19 +49,16 @@ const Section4 = () => {
           Key attributes
         </h1>
         <div className="max-w-[535px]  w-full text-center lg:text-left font-montserrat text-[14px] font-medium text-white space-y-3">
-          <Zoom  direction="right" duration={600} cascade>
-
-          {keyAttributes.map((item, index) => (
-            <div key={index}>
-              <h1 className="text-pink text-[14px] font-semibold">
-                {item.attributes}
-                <span className="font-medium text-white">
-                  {item.key}
-                </span>
-              </h1>
-            </div>
-          ))}
-          </Zoom >
+          <Zoom direction="right" duration={600} cascade>
+            {keyAttributes.map((item, index) => (
+              <div key={index}>
+                <h1 className="text-pink text-[14px] font-semibold">
+                  {item.attributes}
+                  <span className="font-medium text-white">{item.key}</span>
+                </h1>
+              </div>
+            ))}
+          </Zoom>
           <div className="pt-20">
             <div className="w-[172px]">
               <PrimaryButton text="Read more" />
