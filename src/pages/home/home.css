@@ -137,7 +137,10 @@
   }
 }
 
-
 .transform180 {
   transform: tran;
+}
+
+.blurry {
+  filter: blur(84px);
 }

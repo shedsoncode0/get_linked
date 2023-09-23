@@ -24,7 +24,7 @@ const links = [
 
 const Navbar = () => {
   return (
-    <nav className="w-full z-10 py-7 pt-10 px-28 border-b border-white/20 flex items-center">
+    <nav className="w-full z-50 py-7 pt-10 px-28 border-b border-white/20 flex items-center">
       <AttentionSeeker effect="pulse">
         <h1 className="text-white font-clashDisplay font-bold text-[36px]">
           get

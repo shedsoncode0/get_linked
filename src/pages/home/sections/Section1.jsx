@@ -17,8 +17,7 @@ const Section1 = () => {
   return (
     <section className="flex-1 z-50 relative border-b border-white/20 pl-28">
       {/* blob */}
-      <img className="absolute  top-0" src={Blob} alt="" />
-
+      <div className="blurry absolute md:-top-3 left-48 w-[20rem] h-[17rem] md:w-[30rem] md:h-[50vh] rounded-full bg-[#903AFF77]"></div>
       {/*  */}
       <div className="flex flex-col items-end pr-14">
         <h1 className="font-montserrat text-[36px] italic font-bold text-white relative">
